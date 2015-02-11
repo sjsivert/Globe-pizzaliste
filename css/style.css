@@ -1,0 +1,98 @@
+body {
+/*    background-color: #30D0F0;*/
+}
+/*
+Form css
+*/
+.form-table td {
+    padding: 7px
+}
+button:hover {
+    color: #8EC919;   
+}
+ 
+input, button, textarea { 
+    padding: 9px; 
+    border: solid 1px #E5E5E5; 
+    outline: 0; 
+    font: normal 13px/100% Verdana, Tahoma, sans-serif; 
+    background: #FFFFFF; 
+    } 
+   
+textarea { 
+    width: 400px; 
+    max-width: 400px; 
+    height: 150px; 
+    line-height: 150%; 
+    } 
+   
+input:hover, textarea:hover, 
+input:focus, textarea:focus { 
+    border-color: #8EC919;
+    
+    } 
+    
+   
+
+
+/*Everything else*/
+.data-table {
+/*	border: 1px solid black*/
+    width: 400px;
+    padding: 5px;
+}
+.data-table tr:hover {
+    color: #8EC919;
+}
+.data-table .theader:hover {
+    color: #333;
+}
+.data-table td {
+/*	border-bottom: 1px solid blue;*/
+	margin: 2px;
+	padding: 4px;
+}
+
+.ovn1 {
+	float: left;
+	/*position: relative;*/
+	margin: 5px;
+    display: inline-block;
+}
+.ovn2 {
+	float: left;
+	/*position: relative;*/
+	margin: 5px;
+    display: inline-block;
+    width: 500px;
+}
+.ferdig {
+	float: left;
+	/*position: relative;*/
+	margin: 5px;
+    display: inline-block;
+    width: 400px;
+}
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+div {
+    
+}
+
+.center-div {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.center-div2 {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.center-div3 {
+    margin: 0 auto;
+    display: inline-block;
+}

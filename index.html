@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<HTML>
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/countdown-min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+        <!-- Bootstrap -->
+            <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <!-- /Bootrap -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body onload="getTime(); setInterval('getTime()', 1000 )">
+
+	<div id="clock"></div>
+<p id="auth">Laget av: Sindre J. I. Sivertsen</p>
+    <div class="center-div">
+        <h1>Pizza bestillingsliste</h1>
+    <div class="center-div2">
+    <!-- PIZZA input form -->
+	<form name="pizzaOrder" action="" method="get">
+        <table class="form-table">
+            <tr>
+                <td>Navn på kunden</td>
+                <td><input type="text" name="name" value=""></td>
+            </tr>
+            <tr>
+                <td>Pizzatype</td>
+                <td><input type="radio" name="type" value="pepperoni">Pepperoni&nbsp;&nbsp;<input type="radio" name="type" value="mozzarella">Mozzarella</td>
+            </tr>
+            <tr>
+                <td>Har kunden betalt</td>
+                <td><input type="radio" name="betalt" value="betalt" checked>Betalt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		              <input type="radio" name="betalt" value="ikkebetalt">Ikke Betalt
+                </td>
+            </tr>
+            <tr>
+                <td>Kommentar</td>
+                <td><input type="text" name="kommentar" value=""></td>
+            </tr>
+        </table>
+        
+		<input id="newpizzabutton" type="button" name="button" value="Ny pizzabestilling" onclick="getBestilling(this.form)">
+	</form>
+        </div>
+    <div class="center-div3">
+	<div class="ovn1">
+		<h3>Ovn 1</h3>
+		<table id="table1" class="data-table">
+			<tr class="theader">
+				    <td class="Navn">Navn</td>
+				    <td class="type">Pizzatype</td>
+				    <td class="betalt">Betalt?</td>
+				    <td class="kommentar">Kommentar</td>
+				    <td class="ferdig">Ferdig ca</td>
+			  </tr>
+
+			  <tr>
+				    <td class="tg-031e"></td>
+				    <td class="tg-031e"></td>
+				    <td class="tg-031e"></td>
+				    <td class="tg-031e"></td>
+				    <td class="tg-031e"></td>
+			  </tr>
+		</table>
+        
+		<button id="FSB1">Fjern siste bestilling</button>
+		<button id="timerB1">Start Timer</button>
+		<h2 id="timer1">00:00</h2>
+	</div>
+
+	<div class="ovn2">
+		<h3>Ovn 2</h3>
+		<table id="table2" class="data-table">
+			<tr class="theader">
+				    <td class="Navn">Navn</td>
+				    <td class="type">Pizzatype</td>
+				    <td class="betalt">Betalt?</td>
+				    <td class="kommentar">Kommentar</td>
+				    <td class="ferdig">Ferdig ca</td>
+			  </tr>
+			  <tr>
+				    <td class="tg-031e"></td>
+				    <td class="tg-031e"></td>
+				    <td class="tg-031e"></td>
+				    <td class="tg-031e"></td>
+				    <td class="tg-031e"></td>
+			  </tr>
+		</table>
+		<button id="FSB2">Fjern siste bestilling</button>
+		<button id="timerB2">Start Timer</button>
+		<h2 id="timer2">00:00</h2>
+	</div>
+
+	<div class="ferdig">
+		<h3>Ferdig</h3>
+		<table id="table3" class="data-table">
+			<tr class="theader">
+				    <td class="Navn">Navn</td>
+				    <td class="type">Pizzatype</td>
+				    <td class="betalt">Betalt?</td>
+				    <td class="kommentar">Kommentar</td>
+                    <td>Var ferdig</td>
+				    <td class="hentet">Hentet?</td>
+			  </tr>
+			  <tr>
+				    <td class="tg-031e"></td>
+				    <td class="tg-031e"></td>
+				    <td class="tg-031e"></td>
+				    <td class="tg-031e"></td>
+				    <td class="tg-031e"></td>
+			  </tr>
+		</table>
+	</div>
+        </div>
+        </div>
+    
+	</body>
+</HTML>
